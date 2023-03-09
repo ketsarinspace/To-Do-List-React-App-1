@@ -1,0 +1,144 @@
+body {
+  /* background-color: #333; */
+  background: linear-gradient(95deg, #555, #999);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 98vh;
+  width: 100vh;
+}
+.left-page > div > h2 {
+  padding: 1rem 5rem;
+  background: blueviolet;
+  border-radius: 1.2rem;
+}
+
+img {
+  width: auto;
+  height: 30rem;
+}
+
+.right-page {
+  margin-top: 5rem;
+}
+
+.taskBg {
+  background-color: #555;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+}
+
+.text-control {
+  background: green;
+  width: 100%;
+  height: auto;
+}
+
+.taskBg div {
+  display: flex;
+  align-items: center;
+}
+
+.taskNumber {
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskBg .taskText {
+  flex: 1;
+}
+.taskText {
+  inline-size: 300px;
+  overflow-wrap: break-word;
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.taskBg .iconsWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+  color: #07db47;
+}
+
+.taskBg .iconsWrap span:hover {
+  color: yellow;
+}
+.taskBg .iconsWrap .delete:hover {
+  color: red;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .left-page {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    height: 25rem;
+  }
+  .right-page {
+    margin-top: 0;
+  }
+  .left-page > div > h2 {
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    background: red;
+    border-radius: 1.2rem;
+  }
+
+  .taskText {
+    inline-size: 150px;
+    overflow-wrap: break-word;
+  }
+}
