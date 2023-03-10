@@ -2,7 +2,7 @@ const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
   return (
     <>
       {/* Add Task */}
-      <div className="row justify-content-end">
+      <div className="row ">
         <div className="col">
           <input
             value={newTask}
